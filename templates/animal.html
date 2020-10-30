@@ -1,0 +1,17 @@
+<h1>Name: {{ animal }}</h1>
+
+
+{% if attributes %}
+
+    {% for attr in attributes %}
+        <p>Attribute: {{ attr }}</p>
+    {% endfor %}
+
+    <form action="like" method="POST">
+        <button name="animal" value="{{animal}}" type="submit">Like!</button>
+    </form>
+    
+{% else %}
+    <p>No attributes</p>
+{% endif %}
+

@@ -1,0 +1,12 @@
+<form action="search">
+<select name="animal">
+
+{% for animal in animals %}
+    <option value="{{animal}}">{{animal}}</option>
+{% endfor %}
+
+</select>
+
+<input type="submit">
+
+</form>
